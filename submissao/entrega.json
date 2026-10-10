@@ -1,13 +1,33 @@
 {
-  "turma": "12DTAT",
-  "grupo": "Grupo 00",
+  "turma": "Data Analytics BB",
+  "grupo": "Grupo 35",
   "integrantes": [
-    { "nome": "Nome Completo do Integrante", "rm": "RM000000" },
-    { "nome": "Nome Completo do Integrante", "rm": "RM000000" }
+    
+    {
+      "nome": "Alexandre dos Anjos de Jesus",
+      "rm": "RM377732"
+    },
+    {
+      "nome": "Didan Junqueira Ribeiro",
+      "rm": "RM377825"
+    },
+    {
+      "nome": "Fernanda Arruda Pimenta da Silva",
+      "rm": "RM377753"
+    },
+    {
+      "nome": "Guilherme Caetano Peron",
+      "rm": "RM377756"
+    },
+    {
+      "nome": "Nathalia Fernanda dos Santos Gelais",
+      "rm": "RM377743"
+    }
+
   ],
   "links": {
-    "repositorio": "https://github.com/usuario/nome-do-repositorio",
-    "video": "https://www.youtube.com/watch?v=xxxxxxxxxxx",
-    "apresentacao": "https://github.com/usuario/nome-do-repositorio/blob/main/docs/apresentacao_executiva.pdf"
+    "repositorio": "https://github.com/DidanRibeiro/postech-tech-challenge-fase2-grupo35",
+    "video": "https://drive.google.com/file/d/1zn14_Jz4m1fEISZhoIBry205-ASCr1T-/view?usp=sharing",
+    "apresentacao": "https://drive.google.com/file/d/12QuFush3MjMrlNZklt61BRPfMU3m667d/view?usp=sharing"
   }
 }

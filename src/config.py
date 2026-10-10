@@ -1,17 +1,8 @@
-"""Configuração central do projeto: caminhos, semente e constantes.
-
-Importe daqui em todos os notebooks para que os resultados sejam reproduzíveis.
-"""
-
+"""Configuração central do Tech Challenge — Fase 2."""
 from pathlib import Path
 
-# --- Semente -----------------------------------------------------------------
-# Use em TODO ponto que envolva aleatoriedade: train_test_split, modelos, CV.
 RANDOM_STATE = 42
-
-# --- Caminhos ----------------------------------------------------------------
 ROOT = Path(__file__).resolve().parents[1]
-
 DATA_RAW = ROOT / "data" / "raw"
 DATA_PROCESSED = ROOT / "data" / "processed"
 RESULTS = ROOT / "results"
@@ -19,10 +10,23 @@ FIGURES = RESULTS / "figures"
 MODELS = RESULTS / "models"
 METRICS = RESULTS / "metrics"
 
-# --- Dataset -----------------------------------------------------------------
-RAW_FILE = DATA_RAW / "dataset.csv"   # PREENCHER: nome real do arquivo
-TARGET = "target"                      # PREENCHER: nome da variável alvo
-
-# --- Split -------------------------------------------------------------------
-TEST_SIZE = 0.2
+APPLICATION_RAW = DATA_RAW / "application_record.csv"
+CREDIT_RAW = DATA_RAW / "credit_record.csv"
+PROCESSED_FILE = DATA_PROCESSED / "dataset_tratado.csv"
+TARGET = "TARGET_BAD"
+TEST_SIZE = 0.20
 CV_FOLDS = 5
+
+QUANTITATIVE_FEATURES = [
+    "AMT_INCOME_TOTAL", "AGE_YEARS", "EMPLOYMENT_YEARS",
+    "CNT_CHILDREN", "CNT_FAM_MEMBERS",
+]
+BINARY_FEATURES = [
+    "FLAG_OWN_CAR", "FLAG_OWN_REALTY", "FLAG_WORK_PHONE", "FLAG_PHONE",
+    "FLAG_EMAIL", "FLAG_EMPLOYMENT_SENTINEL", "FLAG_FAMILY_INCONSISTENT",
+]
+CATEGORICAL_FEATURES = [
+    "CODE_GENDER", "NAME_INCOME_TYPE", "NAME_EDUCATION_TYPE",
+    "NAME_FAMILY_STATUS", "NAME_HOUSING_TYPE", "OCCUPATION_TYPE",
+]
+FEATURES = QUANTITATIVE_FEATURES + BINARY_FEATURES + CATEGORICAL_FEATURES

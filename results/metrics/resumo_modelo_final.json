@@ -1,0 +1,24 @@
+{
+  "modelo_final": "Random Forest — Class Weight",
+  "random_state": 42,
+  "target": "TARGET_BAD",
+  "regra_target": "ao menos uma ocorrência de atraso de 30 dias ou mais",
+  "validacao_cv": {
+    "F1_%": 42.76,
+    "Precision_%": 39.13,
+    "Recall_%": 47.13,
+    "ROC_AUC_OOF_%": 77.33
+  },
+  "teste_final": {
+    "Accuracy_%": 84.13,
+    "Precision_%": 41.09,
+    "Recall_%": 51.86,
+    "F1_%": 45.85,
+    "ROC_AUC_%": 79.8,
+    "Especificidade_%": 88.93,
+    "TN": 5126,
+    "FP": 638,
+    "FN": 413,
+    "TP": 445
+  }
+}
